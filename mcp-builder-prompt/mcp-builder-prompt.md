@@ -29,9 +29,7 @@ Before generating the MCP server, please provide:
 
 5. **Data Sources**: Will this access files, databases, APIs, or other data sources?
 
-Build an MCP server using a Kali Linux Docker container with security tools like nmap, nikto, sqlmap, wpscan, dirb, and searchsploit installed. Create Python functions wrapped with FastMCP decorators for each tool, sanitizing inputs and returning formatted text results. Run as non-root with proper capabilities set for network tools, and include basic environment variables for configuration.
-
-Create it in a way where I can perform web pentests on servers in my own environment, for educational purposes. 
+I want to build an Email Spam Test MCP Server integrating with the Mailreach API (documentation will be provided). This server should accept email content (subject, sender, body, headers), evaluate it against Mailreach’s 7 spam features, and return structured results including overall spam score, individual feature scores, and final delivery classification (Inbox, Spam, or Missing). It will use API key authentication (provided via environment variable), access only the Mailreach API, optionally log results locally, and be implemented as a stdio MCP server compatible with Claude Code CLI. 
 
 If any information is missing or unclear, I will ask for clarification before proceeding.
 
